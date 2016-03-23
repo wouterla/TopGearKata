@@ -39,7 +39,7 @@ class GearBox
         end
       if @s > 6
         @s -= 1
-      else @s < 1
+      elsif @s < 1
         @s += 1
       end
       @e = i
