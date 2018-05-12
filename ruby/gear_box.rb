@@ -37,13 +37,14 @@ class GearBox
         elsif i < 500
           @s -= 1
         end
-      if @s > 6
-        @s -= 1
-      elsif @s < 1
-        @s += 1
       end
-      @e = i
-      end
-     end
-   end
+    end
+      
+    if @s > 6
+      @s -= 1
+    elsif @s < 1
+      @s += 1
+    end
+    @e = i
+  end
 end
