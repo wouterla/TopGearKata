@@ -1,0 +1,25 @@
+{
+  "name": "top-gear-refactoring-kata",
+  "version": "1.0.0",
+  "description": "This is a refactoring challenge where we look at a single-method case, which is untested, needs refactoring, and is hard to read. Oh, and contains bugs;-)",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "lint": "eslint 'src/**/*.{js,jsx}'",
+    "pretest": "npm run lint"
+  },
+  "devDependencies": {
+    "eslint": "^7.14.0",
+    "jest": "^21.2.1"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "js"
+    ],
+    "testRegex": "(/test/.*|(\\.|/)(test|spec))\\.(js?)$"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wouterla/TopGearKata"
+  }
+}
