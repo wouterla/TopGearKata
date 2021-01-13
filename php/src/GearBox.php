@@ -19,9 +19,7 @@
  * to configure those ranges on the fly!
  * Your assignment is to make the gearbox accept a range of rpms for each gear (and
  * of course use that range to shift gears!)
- *
  */
-
 class GearBox
 {
     private $s = 0;
@@ -34,8 +32,10 @@ class GearBox
             $this->e = $i;
         } else {
             if ($this->s > 0) {
-                if ($i > 2000)
+                if ($i > 2000) {
                     $this->s++;
+                }
+
             } else if ($i < 500) {
                 $this->s--;
             }
